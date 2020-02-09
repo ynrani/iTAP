@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" 
+	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+
+	<persistence-unit name="userPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+	
+		<class>com.itap.model.DO.DevicesDO</class>
+		<class>com.itap.model.DO.FrameworkDO</class>
+		<class>com.itap.model.DO.ITAPBookDtlDO</class>
+		<class>com.itap.model.DO.ITAPConfAllFileDO</class>
+		<class>com.itap.model.DO.ITAPConfigDO</class>
+		<class>com.itap.model.DO.ITAPCrossBrowserGridDO</class>
+		<class>com.itap.model.DO.ITAPCrossBrowserOptions</class>
+		<class>com.itap.model.DO.ITAPCrossBrowserOS</class>
+		<class>com.itap.model.DO.ITAPEnvConfigDO</class>
+		<class>com.itap.model.DO.ITAPEnvDtlDO</class>
+		<class>com.itap.model.DO.ITAPSysConfigDO</class>
+		<class>com.itap.model.DO.ITAPTeamCityProjectDetailsDO</class>
+		<class>com.itap.model.DO.ITAPToolTestCaseDO</class>
+		<class>com.itap.model.DO.ITAPTrainViewDO</class>
+		<class>com.itap.model.DO.ITAPUserAppAccessDO</class>
+		<class>com.itap.model.DO.ITAPUserDtlDO</class>
+		<class>com.itap.model.DO.JenkinsConfigDO</class>
+		<class>com.itap.model.DO.JobDetailsDO</class>
+		<class>com.itap.model.DO.MasterSlaveDetailsDO</class>
+		<class>com.itap.model.DO.TcFrameworkConfigDO</class>
+		<class>com.itap.model.DO.TcFrameworkConfValDO</class>
+		<class>com.itap.model.DO.TestCaseDO</class>
+		<class>com.itap.model.DO.TestStepDO</class>
+		 
+		<properties>
+			<property name = "hibernate.show_sql" value = "true" />
+		</properties>
+	</persistence-unit>
+	 
+	
+</persistence>

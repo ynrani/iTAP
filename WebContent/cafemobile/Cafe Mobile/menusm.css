@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* DESIGN TOPNAV (mainmenu) */
+.menu {text-align: center; margin-top:1px; margin-left:20px; float:right; max-width:90%; min-width:480px;}
+.menu a {display: inline; font:bold 12px/150% "Liberation sans", Arial, Helvetica, sans-serif; color:#fff;}
+.menu a:hover { color:#e05d1f;}
+.menu ul { list-style:none;}
+.menu li {float: none; display: inline; padding:0 1%;}
+
+/* JS MENU */
+/* styles for desktop */
+.tinynav { display: none }
+
+/* styles for mobile */
+@media screen and (max-width: 600px) {
+    .tinynav { display: block }
+    #nav { display: none }
+}

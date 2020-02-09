@@ -1,0 +1,208 @@
+
+	@media only screen and (max-width: 767px) {
+#webstore-navigation li { float:none !important; margin: 5px 0 0 0 !important;}
+#catalogue .last-column > div { margin:5px 0 0 0 !important;}
+#catalogue .product { float:none !important; width: auto !important;}
+#webstore { min-width: auto !important;}
+
+	}
+
+.elastislide-wrapper nav { width:100%; margin-top:-60px;}
+/* responsive width */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.small_box { width:45%;}
+	.Flickr { width:45%; }
+	.pref_blog { width:45%;  }
+		#slider-wrapper object { width: 100%; height: 340px; }
+
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+  /* Target landscape smartphones, portrait tablets, narrow desktops  */
+.small_box {
+width:47%;
+}
+.content_blog {
+width:99%;
+}
+.Flickr {
+width:43%;
+}
+.pref_blog {
+width:40%;
+
+}
+#slider-wrapper object { width: 100%; height: 250px; }
+}
+ @media screen and (max-width:479px) {
+  /* Target portrait smartphones */
+.small_box {
+width:99%;
+}
+.content_blog {
+width:99%;
+}
+.Flickr {
+width:99%;
+}
+.pref_blog {
+width:99%;
+}
+#slider-wrapper object { width: 100%; height: 200px; }
+}
+@media all and (orientation: landscape) {
+/* Target device in landscape mode */
+}
+ @media all and (orientation: portrait) {
+/* Target device in portrait mode */
+}
+/* END responsive width */
+
+
+@charset "utf-8";
+/* CSS Document */
+.columns:after { clear: both; content: ""; display: block; }
+.columns { }
+/* */
+/* */
+.center_small_box > div:after { clear: both; display: block; }
+.center_small_box > div {  position: relative; }
+/* img h2 */
+h2 img { max-width: 100%; height: auto; }
+
+
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	Resets
+	------	*/
+
+nav { margin: 0; padding: 0; border: 0; }
+
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; }
+a img { border: 0; }
+/*	Typography presets
+	------------------	*/
+
+.gigantic { font-size: 110px; line-height: 120px; letter-spacing: -2px; }
+.huge { font-size: 68px; line-height: 72px; letter-spacing: -1px; }
+.large { font-size: 42px; line-height: 48px; }
+.bigger { font-size: 26px; line-height: 36px; }
+.big { font-size: 22px; line-height: 30px; }
+body { font: 13px/1.5em Helvetica, Arial, sans-serif; }
+.small, small { font-size: 13px; line-height: 18px; }
+
+/* Selection colours (easy to forget) */
+
+::selection {
+background: rgb(255,255,158);
+}
+::-moz-selection {
+background: rgb(255,255,158);
+}
+img::selection {
+background: transparent;
+}
+img::-moz-selection {
+background: transparent;
+}
+body { -webkit-tap-highlight-color: rgb(255,255,158); }
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body { -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */ }
+.wrapper { width: 852px; padding-left: 68px; }
+#main { width: 920px; padding-left: 0px; }
+/* #mobile-nav-holder { display: none; } */
+
+.selectnav { display: none; }
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* nav */
+	nav {
+	}
+	#nav li {
+		font-size: 13px;
+		font-weight: lighter;
+	}
+	#nav>li ul {
+	}
+	#nav>li>a>.subheader {
+		display: none;
+	}
+	#mobile-nav-holder {
+		display: none;
+	}
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	.js nav { width:100%; padding:10px 0 0 0; }
+	.js #nav { display: none; }
+	.js .selectnav { display: block; width:100%; padding:0; background:#FFF; padding:3px 5px; font-size: 16px; border: 1px solid #ccc;height: 30px; }
+	.js .selectnav option { font-size:14px; padding:5px; }
+	.logo { float:none;}
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}	
+
+@media only screen and (max-width: 767px) {
+#webstore-navigation li { float:none !important; margin: 5px 0 0 0 !important;}
+#catalogue .last-column > div { margin:5px 0 0 0 !important;}
+#catalogue .product { float:none !important; width: auto !important;}
+#webstore { min-width: auto !important;}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+			iframe.wid5 { height: 250px; width: 100%; }
+			iframe.wid6 { height: 330px; }
+			iframe.wid7 { height: 300px; width: 100%; }
+}
+@media only screen and (max-width: 767px) {
+	iframe.wid5 { height: 250px; width: 100%; }
+		iframe.wid6 { height: 300px; }
+		iframe.wid7 { height: 300px; width: 100%; }
+		iframe.wid8 { height: 280px; width: 100%; }
+}
+
+@media only screen and (max-width: 479px) {
+	iframe.wid5 { height: 130px; width: 100%; }
+	iframe.wid6 { height: 300px; }
+}
+

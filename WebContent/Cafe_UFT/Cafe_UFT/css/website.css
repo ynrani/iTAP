@@ -1,0 +1,41 @@
+/* Tiny Carousel */
+#slider1 { height: auto; overflow:hidden; padding:0;  }
+#slider1 .viewport { margin:0; padding:0; float: left; width:940px; height:230px; overflow: hidden; position: relative; }
+#slider1 .buttons {  display: block;float:right; width:23px; height: 23px; text-indent:-999em; overflow: hidden; position: relative; }
+#slider1 .prev { background: url(../images/prev_a.png) top no-repeat; margin:0 5px 10px 0;  }
+#slider1 .next { background: url(../images/next_h.png) top no-repeat; margin:0;  }
+#slider1 .prev:hover { background: url(../images/l_arrow.png) top no-repeat; margin:0 5px 10px 0;  }
+#slider1 .next:hover { background:url(../images/r_arrow.png) top no-repeat; margin:0;  }
+#slider1 .disable { visibility: visible; }
+#slider1 .overview { list-style: none; position: absolute; padding: 0; margin: 0; width:auto; left: 0 top: 0; }
+#slider1 .overview li{ float: left; margin: 0 5px 0 0; padding:0; height: auto; width:auto;}
+/* Tiny Carousel2 */
+#slider2 { height: auto; overflow:hidden; padding:0;  }
+#slider2 .viewport { margin:0; padding:0; float: left; width:450px; height:140px; overflow: hidden; position: relative; }
+#slider2 .buttons {  display: block;float:right; width:23px; height: 23px; text-indent:-999em; overflow: hidden; position: relative; }
+#slider2 .prev { background:url(../images/prev_a.png) top no-repeat; margin:0 5px 10px 0;  }
+#slider2 .next { background:url(../images/next_a.png) top no-repeat; margin:0;  }
+#slider2 .disable { visibility: visible; }
+#slider2 .overview { list-style: none; position: absolute; padding: 0; margin: 0; width:auto; left: 0 top: 0; }
+#slider2 .overview li{ float: left; margin: 0 5px 0 0; padding:0; height: auto; width:auto;}
+/* responsive width */
+@media screen and (min-width:480px) and (max-width:800px) {
+  /* Target landscape smartphones, portrait tablets, narrow desktops  */
+#slider1 .viewport { margin:0 10px 0 0; padding:0; float: left; width:470px; height:230px; overflow: hidden; position: relative; }
+#slider2 .viewport { margin:0; padding:0; float: left; width:450px; height:140px; overflow: hidden; position: relative; }
+}
+
+@media screen and (max-width:479px) {
+  /* Target portrait smartphones */
+#slider1 .viewport { margin:0 10px 0 0; padding:0; float: left; width:230px; height:230px; overflow: hidden; position: relative; }
+#slider2 .fr { display:none;}
+#slider2 .viewport { margin:0 10px 0 0; padding:0; float: left; width:230px; height:148px; overflow: hidden; position: relative; }
+}
+@media all and (orientation: landscape) {
+  /* Target device in landscape mode */
+}
+
+@media all and (orientation: portrait) {
+  /* Target device in portrait mode */
+}
+/* END responsive width */

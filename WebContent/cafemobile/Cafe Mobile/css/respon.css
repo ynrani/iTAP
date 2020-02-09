@@ -1,0 +1,79 @@
+/* responsive width */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.small_box { width:47%;}
+	.Flickr { width:45%;} 
+	.pref_blog { width:45%;} 
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+  /* Target landscape smartphones, portrait tablets, narrow desktops  */
+.small_box { width:47%;}
+.content_blog { width:99%;}
+.Flickr { width:43%;} 
+.pref_blog { width:40%;} 
+}
+
+@media screen and (max-width:479px) {
+  /* Target portrait smartphones */
+.small_box { width:99%;} 
+.content_blog { width:99%;}
+.Flickr { width:99%;} 
+.pref_blog { width:99%;} 
+}
+@media all and (orientation: landscape) {
+  /* Target device in landscape mode */
+}
+
+@media all and (orientation: portrait) {
+  /* Target device in portrait mode */
+}
+/* END responsive width */
+
+@charset "utf-8";
+/* CSS Document */
+.columns:after { clear: both; content: ""; display: block; }
+.columns { width: 100%; }
+
+/* */
+.oneThird { margin:0.85%; width: 23%; }
+/* */
+.center_small_box > div:after { clear: both; display: block; }
+.center_small_box > div {  position: relative; }
+/* img h2 */
+h2 img { max-width: 100%; height: auto; }
+
+nav { margin: 0; padding: 0; border: 0; }
+
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; }
+a img { border: 0; }
+
+/* Selection colours (easy to forget) */
+
+::selection {
+background: rgb(255,255,158);
+}
+::-moz-selection {
+background: rgb(255,255,158);
+}
+img::selection {
+background: transparent;
+}
+img::-moz-selection {
+background: transparent;
+}
+body { -webkit-tap-highlight-color: rgb(255,255,158); }
+
+body { -webkit-text-size-adjust: 100%; }
+.wrapper { width: 852px; padding-left: 68px; }
+#main { width: 920px; padding-left: 0px; }
+	.menu { float:right; margin:35px 0 0 0;}
+
+.selectnav { display: none; }
+
+@media only screen and (max-width: 767px) {
+	.menu { float:none; margin:0;}
+	.js nav { width:100%; padding:10px 0 0 0; }
+	.js #nav { display: none; }
+	.js .selectnav { display: block; width:100%; padding:0; background:#FFF; padding:3px 5px; font-size: 16px; border: 1px solid #ccc;height: 30px; }
+	.js .selectnav option { font-size:14px; padding:5px; }
+	.logo { float:none;}
+}
